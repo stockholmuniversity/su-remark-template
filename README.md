@@ -3,7 +3,7 @@
 ### Usage
 
 * Run `make`
-* Surf to https://localhost:8000
+* Surf to http://localhost:8000
 
 ### Usage with your own slides
 * Create a git repo and clone it into `slides/`, e.g. `git clone git@github.com/simmel/slides slides`.
