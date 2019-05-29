@@ -1,9 +1,15 @@
 class: center, middle
+layout: true
+.footer[2010-10-13 / N. N., IT-avdelningen]
+
+---
 
 # Example presentation
 
-### TODO
-* Add presenters name at the bottom
+---
+
+# TODO
+* ???
 
 ---
 
