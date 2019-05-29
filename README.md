@@ -12,5 +12,4 @@
   is called.
 
 ### TODO
-* Only listen on localhost
 * Fix the FIXME's
