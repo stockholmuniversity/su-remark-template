@@ -8,11 +8,11 @@ hljs.registerLanguage('terminal', function() {
     contains: [
       {
         className: 'string',
-        begin: '^([\\w.]+)@([\\w.]+)'
+        begin: '^([\\w.]+)@([\\w.-]+)'
       },
       {
         className: 'constant',
-        begin: ' (.*) \\$ '
+        begin: ' (.*) [\\$#] |:(.*)[\\$#] '
       },
       {
         className: 'ansi',
