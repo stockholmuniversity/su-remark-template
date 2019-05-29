@@ -90,7 +90,7 @@ lrwxrwxrwx   1 root root    29 May 28 14:57 <span style="font-weight:bold;color:
 
 # Images!
 
-<img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" height="50%" width="50%" />
+<img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" height="50%" width="50%" />
 
 ---
 
