@@ -4,6 +4,7 @@ layout: true
 
 ---
 
+class: first-slide
 # Example presentation
 
 ---
