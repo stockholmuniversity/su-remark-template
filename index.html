@@ -70,6 +70,15 @@ Add the filename of your `.md`-file to the query string. E.g. <a href="?example.
 
     <script>
       // https://github.com/gnab/remark/wiki/Configuration
+      var doAfterLoad = function() {
+        // Readd highlighted ansi code so that HTML works in external markdown
+        var highlighted = document.querySelectorAll("code.terminal span.hljs-ansi");
+        Array.prototype.forEach.call(highlighted, function(next) {
+          next.insertAdjacentHTML("beforebegin", next.textContent);
+          next.parentNode.removeChild(next);
+        });
+      }
+
       var slideshow = remark.create({
         highlightLines: true,
         highlightSpans: true,
@@ -77,13 +86,7 @@ Add the filename of your `.md`-file to the query string. E.g. <a href="?example.
         // FIXME Calculate this from https://duckduckgo.com/?q=javascript+browser+size
         // ratio: '4:3',
         ratio: '16:9',
-      });
-
-      var highlighted = document.querySelectorAll("code.terminal span.hljs-ansi");
-      Array.prototype.forEach.call(highlighted, function(next) {
-        next.insertAdjacentHTML("beforebegin", next.textContent);
-        next.parentNode.removeChild(next);
-      });
+      }, doAfterLoad);
     </script>
   </body>
 </html>
