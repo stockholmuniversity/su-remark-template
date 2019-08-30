@@ -101,6 +101,21 @@ Add the filename of your `.md`-file to the query string. E.g. <a href="?example.
         Array.prototype.forEach.call(remark_slide_content, function(next) {
           next.insertAdjacentHTML("afterbegin", '<div class="su-logo"></div>');
         });
+
+        // Don't print incremental slides, see
+        // https://github.com/gnab/remark/issues/478#issuecomment-461542136
+        var el = document.getElementsByClassName("remark-slides-area");
+        var slide, slides = slideshow.getSlides(), els = el[0].children;
+        for (var i = 1; i < slides.length; i++) {
+          slide = slides[i];
+          if (slide.properties.continued === "true" || slide.properties.count === "false") {
+            els[i - 1].className += ' has-continuation';
+          }
+        }
+        var s = document.createElement("style");
+        s.type = "text/css";
+        s.innerHTML = "@media print { .has-continuation { display: none; } }";
+        document.head.appendChild(s);
       }
 
       var slideshow = remark.create({
