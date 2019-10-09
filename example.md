@@ -46,7 +46,9 @@ while (<>) {
 }
 ```
 
---
+---
+
+# Some code
 
 ### Ruby
 
