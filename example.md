@@ -7,6 +7,9 @@ layout: true
 class: first-slide
 # Example presentation
 
+???
+Hello my name is N. N. and I'm going to talk about Example presentations.
+
 ---
 
 # TODO
@@ -20,9 +23,15 @@ class: first-slide
 
 1. Introduction
 
+???
+Describe what this talk is about
+
 --
 
 2. Deep-dive
+
+???
+Even MOAR describing
 
 --
 
@@ -46,6 +55,11 @@ while (<>) {
 }
 ```
 
+???
+Perl is awesome. The best programming language in the history of mankind!
+
+Suck it Lisp!
+
 ---
 
 # Some code
@@ -60,6 +74,9 @@ ARGF.each do |i|
   puts CGI.unescape i
 end
 ```
+
+???
+Ruby <3
 
 ---
 
