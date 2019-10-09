@@ -28,8 +28,6 @@ class: first-slide
 
 3. Another bullet point
 
---
-
 ---
 
 # Some code
