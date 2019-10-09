@@ -64,19 +64,21 @@ Suck it Lisp!
 
 # Some code
 
-### Ruby
+### Python
 
-```ruby
-#!/usr/bin/env ruby
-require 'cgi'
+```python
+#!/usr/bin/env python3
+import fileinput
+import urllib.parse
 
-ARGF.each do |i|
-  puts CGI.unescape i
-end
+for line in fileinput.input():
+    print(urllib.parse.unquote(line), end='')
 ```
 
 ???
-Ruby <3
+Boo Python! 🐍's suck!
+
+Well.. until you get to know them…
 
 ---
 
